@@ -11,6 +11,7 @@
 		3FBA92F6294E4962006FB788 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA92F5294E4962006FB788 /* ContentView.swift */; };
 		3FBA92F8294E4963006FB788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA92F7294E4963006FB788 /* Assets.xcassets */; };
 		3FBA92FB294E4963006FB788 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA92FA294E4963006FB788 /* Preview Assets.xcassets */; };
+		3FBA9302294E4A42006FB788 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA9301294E4A42006FB788 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3FBA92F5294E4962006FB788 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FBA92F7294E4963006FB788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBA92FA294E4963006FB788 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FBA9301294E4A42006FB788 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3FBA92F3294E4962006FB788 /* TimeToLoginAppApp.swift */,
 				3FBA92F5294E4962006FB788 /* ContentView.swift */,
+				3FBA9301294E4A42006FB788 /* TimerView.swift */,
 				3FBA92F7294E4963006FB788 /* Assets.xcassets */,
 				3FBA92F9294E4963006FB788 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBA9302294E4A42006FB788 /* TimerView.swift in Sources */,
 				3FBA92F6294E4962006FB788 /* ContentView.swift in Sources */,
 				3FBA92F4294E4962006FB788 /* TimeToLoginAppApp.swift in Sources */,
 			);
