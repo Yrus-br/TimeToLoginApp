@@ -8,12 +8,13 @@
 import SwiftUI
 
 @main
-struct TimeToLoginAppApp: App {
-    @StateObject private var userManager = UserManager()
+struct StateAndDataFlow: App {
+    private let user = DataManager.shared.fetchUser()
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
+                .environmentObject(UserManager(user: user))
         }
     }
 }

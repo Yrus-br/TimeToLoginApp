@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F592EC229537F7100C8CC99 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F592EC129537F7100C8CC99 /* DataManager.swift */; };
+		3F592EC42953905E00C8CC99 /* TimeToLogOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F592EC32953905E00C8CC99 /* TimeToLogOutView.swift */; };
 		3F6698B3294E6E5A00D1012D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6698B2294E6E5A00D1012D /* UserManager.swift */; };
 		3F6698B7294E6E9000D1012D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6698B6294E6E9000D1012D /* RegistrationView.swift */; };
 		3F9EEF85294E71290029A9BE /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EEF84294E71290029A9BE /* StartView.swift */; };
 		3FBA92F4294E4962006FB788 /* TimeToLoginAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA92F3294E4962006FB788 /* TimeToLoginAppApp.swift */; };
-		3FBA92F6294E4962006FB788 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA92F5294E4962006FB788 /* ContentView.swift */; };
 		3FBA92F8294E4963006FB788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA92F7294E4963006FB788 /* Assets.xcassets */; };
 		3FBA92FB294E4963006FB788 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA92FA294E4963006FB788 /* Preview Assets.xcassets */; };
 		3FBA9302294E4A42006FB788 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA9301294E4A42006FB788 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F592EC129537F7100C8CC99 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		3F592EC32953905E00C8CC99 /* TimeToLogOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToLogOutView.swift; sourceTree = "<group>"; };
 		3F6698B2294E6E5A00D1012D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		3F6698B6294E6E9000D1012D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		3F9EEF84294E71290029A9BE /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		3FBA92F0294E4962006FB788 /* TimeToLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBA92F3294E4962006FB788 /* TimeToLoginAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToLoginAppApp.swift; sourceTree = "<group>"; };
-		3FBA92F5294E4962006FB788 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FBA92F7294E4963006FB788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBA92FA294E4963006FB788 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FBA9301294E4A42006FB788 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -60,11 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				3FBA92F3294E4962006FB788 /* TimeToLoginAppApp.swift */,
-				3FBA92F5294E4962006FB788 /* ContentView.swift */,
 				3F9EEF84294E71290029A9BE /* StartView.swift */,
 				3F6698B2294E6E5A00D1012D /* UserManager.swift */,
 				3F6698B6294E6E9000D1012D /* RegistrationView.swift */,
+				3F592EC129537F7100C8CC99 /* DataManager.swift */,
 				3FBA9301294E4A42006FB788 /* TimerView.swift */,
+				3F592EC32953905E00C8CC99 /* TimeToLogOutView.swift */,
 				3FBA92F7294E4963006FB788 /* Assets.xcassets */,
 				3FBA92F9294E4963006FB788 /* Preview Content */,
 			);
@@ -150,8 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBA9302294E4A42006FB788 /* TimerView.swift in Sources */,
-				3FBA92F6294E4962006FB788 /* ContentView.swift in Sources */,
 				3F6698B7294E6E9000D1012D /* RegistrationView.swift in Sources */,
+				3F592EC42953905E00C8CC99 /* TimeToLogOutView.swift in Sources */,
+				3F592EC229537F7100C8CC99 /* DataManager.swift in Sources */,
 				3F9EEF85294E71290029A9BE /* StartView.swift in Sources */,
 				3F6698B3294E6E5A00D1012D /* UserManager.swift in Sources */,
 				3FBA92F4294E4962006FB788 /* TimeToLoginAppApp.swift in Sources */,

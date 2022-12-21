@@ -4,10 +4,24 @@
 //
 //  Created by Jorgen Shiller on 18.12.2022.
 //
+import Combine
 
-import Foundation
+final class UserManager: ObservableObject {
+    
+    @Published var user = User()
+    
+    var nameIsValid: Bool {
+        user.name.count >= 3
+    }
+    
+    init() {}
+    
+    init(user: User) {
+        self.user = user
+    }
+}
 
-class UserManager: ObservableObject {
-    @Published var isRegister = false
+struct User: Codable {
     var name = ""
+    var isRegistered = false
 }

@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct StartView: View {
+    
     @EnvironmentObject private var userManager: UserManager
     
     var body: some View {
         Group {
-             if userManager.isRegister {
-                ContentView()
+            if userManager.user.isRegistered {
+                TimeToLogOutView()
             } else {
                 RegistrationView()
             }
@@ -23,9 +22,10 @@ struct StartView: View {
     }
 }
 
-struct StartView_Previews: PreviewProvider {
+struct StarterView_Previews: PreviewProvider {
     static var previews: some View {
         StartView()
             .environmentObject(UserManager())
     }
 }
+
