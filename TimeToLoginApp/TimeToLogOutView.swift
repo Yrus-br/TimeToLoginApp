@@ -17,7 +17,7 @@ struct TimeToLogOutView: View {
             Text("Hi, \(userManager.user.name)")
                 .font(.largeTitle)
                 .offset(x: 0, y: 100)
-            Text("\(timer.counter)")
+            Text(timer.counter != 0 ? "\(timer.counter)" : "You can LogOut now")
                 .font(.largeTitle)
                 .offset(x: 0, y: 200)
             
@@ -26,15 +26,15 @@ struct TimeToLogOutView: View {
             VStack {
                 Spacer()
                 
-                Button("Start") {
+                ButtonView(title: timer.buttonTitle, color: .green) {
                     timer.startTimer()
                 }
                 
                 Spacer()
                 
-                Button("LogOut") {
-                    DataManager.shared.clear(userManager: userManager)
-                }
+                ButtonView(title: "LogOut", color: .red) {
+                        DataManager.shared.clear(userManager: userManager)
+                }.disabled(timer.counter != 0)
             }
         }
     }

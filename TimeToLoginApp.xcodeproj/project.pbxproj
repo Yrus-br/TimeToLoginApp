@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F592EC229537F7100C8CC99 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F592EC129537F7100C8CC99 /* DataManager.swift */; };
 		3F592EC42953905E00C8CC99 /* TimeToLogOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F592EC32953905E00C8CC99 /* TimeToLogOutView.swift */; };
+		3F592EC62953944500C8CC99 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F592EC52953944500C8CC99 /* ButtonView.swift */; };
 		3F6698B3294E6E5A00D1012D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6698B2294E6E5A00D1012D /* UserManager.swift */; };
 		3F6698B7294E6E9000D1012D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6698B6294E6E9000D1012D /* RegistrationView.swift */; };
 		3F9EEF85294E71290029A9BE /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EEF84294E71290029A9BE /* StartView.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		3F592EC129537F7100C8CC99 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3F592EC32953905E00C8CC99 /* TimeToLogOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToLogOutView.swift; sourceTree = "<group>"; };
+		3F592EC52953944500C8CC99 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		3F6698B2294E6E5A00D1012D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		3F6698B6294E6E9000D1012D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		3F9EEF84294E71290029A9BE /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				3F6698B6294E6E9000D1012D /* RegistrationView.swift */,
 				3F592EC129537F7100C8CC99 /* DataManager.swift */,
 				3FBA9301294E4A42006FB788 /* TimerView.swift */,
+				3F592EC52953944500C8CC99 /* ButtonView.swift */,
 				3F592EC32953905E00C8CC99 /* TimeToLogOutView.swift */,
 				3FBA92F7294E4963006FB788 /* Assets.xcassets */,
 				3FBA92F9294E4963006FB788 /* Preview Content */,
@@ -154,6 +157,7 @@
 			files = (
 				3FBA9302294E4A42006FB788 /* TimerView.swift in Sources */,
 				3F6698B7294E6E9000D1012D /* RegistrationView.swift in Sources */,
+				3F592EC62953944500C8CC99 /* ButtonView.swift in Sources */,
 				3F592EC42953905E00C8CC99 /* TimeToLogOutView.swift in Sources */,
 				3F592EC229537F7100C8CC99 /* DataManager.swift in Sources */,
 				3F9EEF85294E71290029A9BE /* StartView.swift in Sources */,
