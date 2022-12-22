@@ -14,10 +14,19 @@ struct TimeToLogOutView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+
+                Button("Log Out") {
+                    DataManager.shared.clear(userManager: userManager)
+                }.disabled(timer.counter != 0)
+                    .font(.title3)
+            }.padding()
+            
             Text("Hi, \(userManager.user.name)")
                 .font(.largeTitle)
                 .offset(x: 0, y: 100)
-            Text(timer.counter != 0 ? "\(timer.counter)" : "You can LogOut now")
+            Text(timer.counter != 0 ? "\(timer.counter)" : "You can Log Out now")
                 .font(.largeTitle)
                 .offset(x: 0, y: 200)
             
@@ -31,14 +40,13 @@ struct TimeToLogOutView: View {
                 }
                 
                 Spacer()
-                
-                ButtonView(title: "LogOut", color: .red) {
-                        DataManager.shared.clear(userManager: userManager)
-                }.disabled(timer.counter != 0)
+
             }
+            
         }
     }
 }
+
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
