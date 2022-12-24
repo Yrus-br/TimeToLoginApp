@@ -15,7 +15,7 @@ class TimerView: ObservableObject {
     var timer: Timer?
     
     func startTimer() {
-        if counter > 0 {
+        if counter > -1 {
             timer = Timer.scheduledTimer(
                 timeInterval: 1,
                 target: self,
@@ -31,7 +31,6 @@ class TimerView: ObservableObject {
         if counter > 0 {
             counter -= 1
         } else {
-            killTimer()
             buttonTitle = "Reset"
         }
         
@@ -49,7 +48,7 @@ class TimerView: ObservableObject {
         objectWillChange.send(self)
     }
     
-    private func killTimer() {
+     func killTimer() {
         timer?.invalidate()
         timer = nil
     }

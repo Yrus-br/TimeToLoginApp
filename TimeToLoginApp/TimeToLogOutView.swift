@@ -11,6 +11,7 @@ struct TimeToLogOutView: View {
     
     @StateObject private var timer = TimerView()
     @EnvironmentObject private var userManager: UserManager
+    @State private var buttonIsActive = false
     
     var body: some View {
         VStack {
@@ -19,7 +20,7 @@ struct TimeToLogOutView: View {
 
                 Button("Log Out") {
                     DataManager.shared.clear(userManager: userManager)
-                }.disabled(timer.counter != 0)
+                }.disabled(!buttonIsActive)
                     .font(.title3)
             }.padding()
             
@@ -37,6 +38,10 @@ struct TimeToLogOutView: View {
                 
                 ButtonView(title: timer.buttonTitle, color: .green) {
                     timer.startTimer()
+                    if timer.counter == 0 {
+                        buttonIsActive = true
+                        DataManager.shared.clear(userManager: userManager)
+                    }
                 }
                 
                 Spacer()
@@ -46,7 +51,6 @@ struct TimeToLogOutView: View {
         }
     }
 }
-
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
